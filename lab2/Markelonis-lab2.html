@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8"/>
+   <style>
+   
+   </style>
+   <title>IT 2320 - Lab 2</title>
+   <pre>
+   <script>
+      "use strict";
+	  
+	  // set up an array and initialize the first two values
+	  var fibArray = [];
+	  fibArray[0] = 0;
+	  fibArray[1] = 1;
+	  
+	  // declare a variable for the size of the squence 
+	  var fibNum;
+	  
+	  // prompt user for how many 
+          
+               fibNum = prompt ("Enter number to be Fibonaccied, must be greater than 3"); //asks for number
+          
+
+	  // check that fibNum >= 3
+               if (fibNum <=3) {                 //prompt number to small?
+                  alert("to small");             //yes then let them know
+                   } 
+                  
+	  
+	  // write the values into the array
+	  // You start at 2 because the first two values are already there
+	  for (var i=2; i<fibNum; i++) {                         
+	     fibArray [i] = fibArray [i-1] + fibArray [i-2]  ;   //takes array nunbered and ads last one to one behind
+	  }
+	  
+
+	  // read from the array and print "V"alues to screen
+	  // another for loop 
+           
+           for (var i = 0; i < fibArray.length; i ++) {    //takes length of array to compare, loops through I till all values pumped out (copied stright from text book)
+            fibArray[i] + " " ;                   //space between numbers important for readability
+              }
+            alert ("your array " + fibArray);                               //prints array
+
+	  
+	  // calculate golden ratio and display it
+	  //  last number / 2nd last number
+               
+                alert ( "Your custom golden ratio " + fibArray [i-1] /  fibArray [i-2]  );  //last two numbers divided
+   </script>
+   </pre>
+</head>
+<body>
+   <h2>Andrew Markelonis - IT 2320 - Lab 2</h2>
+
+
+
+</body>
+
+</html>
